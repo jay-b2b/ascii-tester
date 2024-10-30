@@ -27,17 +27,11 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: screenshots
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
+      label: Screenshot(s)
+      placeholder: "Paste screenshots using Ctrl + V"
   - type: dropdown
     id: browsers
     attributes:
@@ -54,11 +48,3 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
